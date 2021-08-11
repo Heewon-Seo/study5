@@ -7,7 +7,7 @@ public class ViewUtil {
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.println("****** 비트를 타쇼 " + menusName + " ******");
-            System.out.println("     원하는 메뉴의 번호를 입력하세요");
+            System.out.println("     원하는 메뉴의 번호를 입력 하세요");
             for (int i = 0; i < menus.length; i++) {
                 System.out.printf("%d. %s%n", i + 1, menus[i]);
             }

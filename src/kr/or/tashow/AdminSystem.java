@@ -34,7 +34,7 @@ public class AdminSystem {
                 System.out.println("1인용은 1번, 2인용은 2번, 이전 메뉴로 돌아가시려면 0번을 입력해 주세요");
                 continue;
             }
-            if (!(input == 1 || input == 2 | input == 0)) {
+            if (!(input == 1 || input == 2 || input == 0)) {
                 System.out.println("1인용 혹은 2인용만 등록 가능합니다");
                 System.out.println("1인용은 1번, 2인용은 2번, 이전 메뉴로 돌아가시려면 0번을 입력해 주세요");
             } else if (input == 0) {
@@ -86,7 +86,7 @@ public class AdminSystem {
         } catch (NumberFormatException e) {
             System.out.println("숫자만 입력 가능합니다");
         }
-        if (!(menu == 1 || menu == 2 | menu == 0)) {
+        if (!(menu == 1 || menu == 2 || menu == 0)) {
             System.out.println("잘못 입력하셨습니다");
         } else if (menu == 0) {
             System.out.println("이전메뉴로 돌아갑니다"); // 추가
@@ -118,7 +118,7 @@ public class AdminSystem {
                 System.out.println(e.getMessage());
             }
             if (id.equals("0")) {
-                System.out.println("삭제가 취소되었습니다.");
+                System.out.println("삭제가 취소되었습니다");
                 break;
             } else if (!bikeList.containsKey(id)) {
                 System.out.println("일치하는 자전거가 없습니다 | 0. 취소");
